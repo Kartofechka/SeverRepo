@@ -4,6 +4,7 @@
 #include <random>
 #include "Functions.h"
 #include <algorithm>
+#include <vector>
 
 
 int main() {
@@ -22,23 +23,27 @@ int main() {
             int32_t array[MAX_SIZE];
             size_t size{ InputSize() };
             ActionsWithArray(array, size);
+            break;
         }
         case 12: {
             double array[MAX_SIZE];
             size_t size{ InputSize() };
             ActionsWithArray(array, size);
+            break;
         }
         case 21: {
             size_t size{ InputSize() };
             int* array = new int[size];
             ActionsWithArray(array, size);
             delete[] array;
+            break;
         }
         case 22: {
             size_t size{ InputSize() };
             double* array = new double[size];
             ActionsWithArray(array, size);
             delete[] array;
+            break;
         }
         return 0;
         }
